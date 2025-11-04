@@ -1,0 +1,4 @@
+
+body { background: #f7fbff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+.header { text-align:center; margin-top:12px; }
+.card { background:white; border-radius:10px; padding:12px; box-shadow:0 2px 6px rgba(0,0,0,0.08); }
