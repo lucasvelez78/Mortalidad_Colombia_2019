@@ -20,7 +20,7 @@ Esta aplicación explora la mortalidad en Colombia durante el año 2019. Provee 
 El objetivo es facilitar el análisis exploratorio de los datos de mortalidad, identificar patrones por departamento, mes, sexo, grupo de edad y causas de muerte, y ofrecer una herramienta accesible para la comunidad académica y técnica.
 
 
-## Objettivos
+## Objetivos
 
 - Visualizar la distribución de muertes por departamento (mapa coroplético).
 
