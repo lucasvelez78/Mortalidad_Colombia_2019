@@ -14,6 +14,7 @@ from dash import Dash, html, dcc, dash_table
 from dash.dependencies import Input, Output
 import dash_bootstrap_components as dbc
 import plotly.express as px
+from flask_caching import Cache
 
 # -------------------------
 # Rutas y configuración
@@ -30,9 +31,22 @@ px.defaults.template = "plotly_white"
 PAPER_BG = "#f8f9fa"
 PLOT_BG = "#ffffff"
 
+
+# -------------------------
+# DASH APP
+# -------------------------
+app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
+
+cache = Cache(app.server, config={
+    "CACHE_TYPE": "SimpleCache",       # o "FileSystemCache"
+    "CACHE_DEFAULT_TIMEOUT": 300       # segundos (5 min)
+})
+
 # -------------------------
 # Cargar datos (seguro)
 # -------------------------
+@cache.memoize()
 def safe_read_excel(path):
     if path.exists():
         try:
@@ -280,11 +294,7 @@ if FN_GEOJSON.exists():
         print("Error leyendo GeoJSON:", e)
         geojson = None
 
-# -------------------------
-# DASH APP
-# -------------------------
-app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
-server = app.server
+
 
 dept_options = [{'label': d, 'value': d} for d in sorted(df['DEPARTAMENTO'].fillna("Departamento desconocido").unique())]
 
