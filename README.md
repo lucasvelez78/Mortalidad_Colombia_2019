@@ -123,29 +123,43 @@ Pasos seguidos para desplegar la aplicación en Render:
 
 1. Mapa: Muertes por departamento
 
+<img width="534" height="291" alt="Image" src="https://github.com/user-attachments/assets/8a278d97-42fb-4fc5-b4c1-5301b925b559" />
+
 Representa la distribución total de muertes en 2019. Los departamentos con mayor población (Antioquia, Bogotá, Valle del Cauca) muestran los valores más altos.
 
 2. Gráfico de líneas: Muertes por mes
+
+<img width="538" height="283" alt="Image" src="https://github.com/user-attachments/assets/12545e8d-c4f2-4ba2-9020-1f30add1f346" />
 
 Muestra la variación mensual del número de defunciones, evidenciando posibles picos estacionales o comportamientos anómalos.
 
 3. Gráfico de barras: Ciudades más violentas
 
+<img width="534" height="288" alt="Image" src="https://github.com/user-attachments/assets/d4fdcfd7-ae9e-4d8c-859b-cc79fed4a160" />
+
 Visualiza las 5 ciudades con mayor número de homicidios (códigos X95 y relacionados). Permite identificar focos urbanos de violencia.
 
 4. Gráfico circular: Ciudades con menor mortalidad
+
+<img width="531" height="237" alt="Image" src="https://github.com/user-attachments/assets/af44be0b-62e6-4810-868a-fbf4467d672f" /> 
 
 Destaca las 10 ciudades con menor número total de muertes. Generalmente corresponden a municipios rurales con poca población.
 
 5. Tabla: Principales causas de muerte
 
+<img width="532" height="239" alt="Image" src="https://github.com/user-attachments/assets/d0c7d708-ea71-409d-81e8-68139f6536e8" /> 
+
 Lista las 10 causas más frecuentes, con su código, nombre y número de casos. Facilita la identificación de los principales problemas de salud pública.
 
 6. Barras apiladas: Muertes por sexo y departamento
 
+<img width="535" height="294" alt="Image" src="https://github.com/user-attachments/assets/6294434f-ac7b-4d53-8572-85c0cb9361a7" /> 
+
 Compara la mortalidad masculina y femenina por región. Identifica diferencias demográficas y de comportamiento.
 
 7. Histograma: Distribución por grupo de edad
+
+<img width="532" height="270" alt="Image" src="https://github.com/user-attachments/assets/4e0892da-6941-40dc-aef8-3e041f64b886" /> 
 
 Agrupa las muertes según GRUPO_EDAD1 para observar los patrones de mortalidad a lo largo del ciclo de vida.
 
